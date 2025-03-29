@@ -16,6 +16,12 @@ body {
   color: #343a40;
 }
 
+.button-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
 button {
   background-color: #212529; 
   color: white; 
@@ -26,7 +32,6 @@ button {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease; 
-  margin: 5px; 
 }
 
 button:hover {

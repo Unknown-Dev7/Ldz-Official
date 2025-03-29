@@ -62,7 +62,7 @@ h5 {
   margin: 5px 0;
 }
 
-h1, h4, h5, h6 {
+h1, h4, h5, {
   margin: 10px 0;
 }
 
@@ -122,3 +122,6 @@ h1, h4, h5, h6 {
     width: 120px; 
   }
 }
+  h6 {
+    position: botom;
+  }

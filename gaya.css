@@ -3,12 +3,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: h;
+  min-height: 100vh;
   margin: 0;
   text-align: center;
   background-color: #f0f0f0;
   padding: 20px;
   box-sizing: border-box; 
+  position: relative;
 }
 
 button {
@@ -62,7 +63,7 @@ h5 {
   margin: 5px 0;
 }
 
-h1, h4, h5, {
+h1, h4, h5 {
   margin: 10px 0;
 }
 
@@ -74,34 +75,35 @@ h1, h4, h5, {
 }
 
 #loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .loader {
-    width: 50px;
-    height: 50px;
-    border: 5px solid black;
-    border-top: 5px solid white;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+  width: 50px;
+  height: 50px;
+  border: 5px solid black;
+  border-top: 5px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .hidden {
-    display: none;
+  display: none;
+}
 
 @media (max-width: 768px) {
   .contact-container {
@@ -122,6 +124,12 @@ h1, h4, h5, {
     width: 120px; 
   }
 }
-  h6 {
-    position: botom;
-  }
+
+h6 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background: #f0f0f0;
+}

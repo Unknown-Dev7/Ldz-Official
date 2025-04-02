@@ -74,7 +74,7 @@ button:hover {
 }
 
 .row:last-child {
-    justify-content: center; /* Memastikan baris kedua tetap di tengah */
+    justify-content: center;
 }
 
 .row img {
@@ -91,4 +91,35 @@ footer {
     text-align: center;
     font-size: 0.8vw;
     font-weight: 300;
+}
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #212529;
+    border-top: 6px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none;
 }

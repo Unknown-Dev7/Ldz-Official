@@ -68,8 +68,13 @@ button:hover {
 
 .row {
     display: flex;
-    gap: 20px;
     justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.row:last-child {
+    justify-content: center; /* Memastikan baris kedua tetap di tengah */
 }
 
 .row img {

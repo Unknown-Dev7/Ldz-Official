@@ -2,5 +2,5 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         document.getElementById("loading-screen").style.display = "none";
         document.getElementById("content").classList.remove("hidden");
-    }, 2000);
+    }, 1000);
 });
